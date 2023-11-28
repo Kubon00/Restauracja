@@ -23,6 +23,7 @@
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -116,8 +117,7 @@
                             </div>
                             <div class="control-group">
                                 <div class="input-group">
-                                    <input type="text" name="telefon" class="form-control" placeholder="Nr. Telefonu"
-                                        required="required" />
+                                    <input type="text" name="telefon" class="form-control" placeholder="Nr. Telefonu" required="required" />
                                     <div class="input-group-append">
                                         <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
                                     </div>
@@ -125,9 +125,7 @@
                             </div>
                             <div class="control-group">
                                 <div class="input-group date" id="date" data-target-input="nearest">
-                                    <input type="text" name="dataa" class="form-control datetimepicker-input"
-                                        placeholder="Data" data-target="#date"
-                                        data-toggle="datetimepicker" />
+                                    <input type="text" name="dataa" class="form-control datetimepicker-input" placeholder="Data" data-target="#date" data-toggle="datetimepicker" />
                                     <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                     </div>
@@ -135,22 +133,43 @@
                             </div>
                             <div class="control-group">
                                 <div class="input-group time" name="godzina" id="time" data-target-input="nearest">
-                                    <input type="text" name="godzina" class="form-control datetimepicker-input" placeholder="Godzina"
-                                        data-target="#time" data-toggle="datetimepicker"required="required" />
+                                    <input type="text" name="godzina" class="form-control datetimepicker-input" placeholder="Godzina" data-target="#time" data-toggle="datetimepicker" required="required" />
                                     <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
                                         <div class="input-group-text"><i class="far fa-clock"></i></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="control-group">
-                            <div class="form-group">
-								<div class="input-group">
-									<input required="required" name="goscie" type="number" min="1" max="10" class="form-control" placeholder="Liczba gości"/>
-								</div>
-							</div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <!-- Zmieniono input na rozwijalną listę z numerami stolików -->
+                                        <select required="required" name="Nr_stolika" class="form-control">
+                                            <option value="" disabled selected>Wybierz numer stolika</option>
+                                            <?php
+                                            include("connect.php");
+                                            $sql = "SELECT stolik FROM stoliki WHERE czy_zajety = 0";
+                                            $result = mysqli_query($conn, $sql);
+                                            if ($result && mysqli_num_rows($result) > 0) {
+                                                while ($rowStolik = mysqli_fetch_assoc($result)) {
+                                                    echo "<option value=\"{$rowStolik['stolik']}\">{$rowStolik['stolik']}</option>";
+                                                }
+                                            } else {
+                                                echo "<option disabled selected>Brak dostępnych stolików</option>";
+                                            }
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input required="required" name="goscie" type="number" min="1" max="10" class="form-control" placeholder="Liczba gości" />
+                                    </div>
+                                </div>
                             </div>
                             <div>
-                                <input class="btn custom-btn" type="submit"></input>
+                                <input class="btn custom-btn" type="submit" />
                             </div>
                         </form>
                     </div>
@@ -158,8 +177,10 @@
             </div>
         </div>
     </div>
-    <!-- Booking End -->
 
+    <div class="text-center">
+        <img src="./img/restauracja_stoliki.png" alt="Image">
+    </div>
 
     <!-- Menu Start -->
     <div class="menu">
@@ -250,7 +271,7 @@
                                     <div class="menu-text">
                                         <h3><span>Sałatka Morska</span> <strong>22,40 zł</strong></h3>
                                         <p>kapusta pekińska, tuńczyk, pomidor, kapary, oliwki, ser żółty, sos vinegrette
-                                            <p>
+                                        <p>
                                     </div>
                                 </div>
                                 <div class="menu-item">
@@ -365,14 +386,10 @@
                                 <p><i class="fa fa-phone-alt"></i>123 123 123</p>
                                 <p><i class="fa fa-envelope"></i>loremlorem@gmail.com</p>
                                 <div class="footer-social">
-                                    <a href="https://www.facebook.com/daniel.kochaneek"><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCq_0gLwc-DG7PQ0HYh_R2GQ"><i
-                                            class="fab fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/daniel.kochaneek/"><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/daniel-kochanek-4423a321a/"><i
-                                            class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.facebook.com/daniel.kochaneek"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCq_0gLwc-DG7PQ0HYh_R2GQ"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/daniel.kochaneek/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/daniel-kochanek-4423a321a/"><i class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>
