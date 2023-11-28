@@ -125,6 +125,7 @@ if ($result = $rezerwacje->query('SELECT * FROM rezerwacje ORDER BY ' .  $column
                     <th><a href="reservations.php?column=dataa&order=<?php echo $asc_or_desc; ?>">Data<i class="fas fa-sort<?php echo $column == 'dataa' ? '-' . $up_or_down : ''; ?>"></i></a></th>
                     <th><a href="reservations.php?column=godzina&order=<?php echo $asc_or_desc; ?>">Godzina<i class="fas fa-sort<?php echo $column == 'godzina' ? '-' . $up_or_down : ''; ?>"></i></a></th>
                     <th><a href="reservations.php?column=goscie&order=<?php echo $asc_or_desc; ?>">Goście<i class="fas fa-sort<?php echo $column == 'goscie' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+                    <th><a href="reservations.php?column=goscie&order=<?php echo $asc_or_desc; ?>">Stolik<i class="fas fa-sort<?php echo $column == 'stolik' ? '-' . $up_or_down : ''; ?>"></i></a></th>
                     <th><a href="reservations.php?column=goscie&order=<?php echo $asc_or_desc; ?>">Edytor<i class="fas fa-sort<?php echo $column == 'Edytor' ? '-' . $up_or_down : ''; ?>"></i></a></th>
                     <th><a>Edytuj</a></th>
                     <th><a>Usuń</a></th>
@@ -137,6 +138,7 @@ if ($result = $rezerwacje->query('SELECT * FROM rezerwacje ORDER BY ' .  $column
                     <td<?php echo $column == 'dataa' ? $add_class : ''; ?>><?php echo $row['dataa']; ?></td>
                     <td<?php echo $column == 'godzina' ? $add_class : ''; ?>><?php echo $row['godzina']; ?></td>
                     <td<?php echo $column == 'goscie' ? $add_class : ''; ?>><?php echo $row['goscie']; ?></td>
+                    <td<?php echo $column == 'stolik' ? $add_class : ''; ?>><?php echo $row['stolik']; ?></td>
                     <td<?php echo $column == 'Edytor' ? $add_class : ''; ?>><?php echo $row['Edytor']; ?></td>
                     <td align="center">
                     <a href="edit.php?id=<?php echo $row["id"]; ?>">Edytuj</a>

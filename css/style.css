@@ -16,7 +16,16 @@ h6 {
     color: #454545;
     font-family: 'Nunito', sans-serif;
 }
-
+.roomImageDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.roomImage{
+    max-width: 100%;
+    max-height: 100%;
+}
 a {
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
