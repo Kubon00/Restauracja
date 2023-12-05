@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include('navbar.php');
+?>
 <html lang="pl">
 
 <head>
@@ -26,31 +29,6 @@
 </head>
 
 <body>
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="main.html" class="navbar-brand">Restauracja <span>Oregano</span></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="main.html" class="nav-item nav-link active">Strona Główna</a>
-                    <a href="about.html" class="nav-item nav-link">O nas</a>
-                    <a href="team.html" class="nav-item nav-link">Kucharze</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <a href="bookings.php" class="nav-item nav-link">Rezerwacja</a>
-                    <a href="contact.php" class="nav-item nav-link">Kontakt</a>
-                    <a href="questions.php" class="nav-item nav-link">Pytania</a>
-                    <a href="reservations.php" class="nav-item nav-link">Rezerwacje</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Nav Bar End -->
-
-
     <!-- Page Header Start -->
     <div class="page-header">
         <div class="container">
@@ -59,8 +37,8 @@
                     <h2>Szefowie Kuchni</h2>
                 </div>
                 <div class="col-12">
-                    <a href="./index.html">Strona Główna</a>
-                    <a href="./team.html">Kucharze</a>
+                    <a href="./main.php">Strona Główna</a>
+                    <a href="./team.php">Kucharze</a>
                 </div>
             </div>
         </div>

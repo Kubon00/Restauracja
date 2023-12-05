@@ -25,7 +25,7 @@ and password='".md5($password)."'";
         if($rows==1){
 	    $_SESSION['username'] = $username;
             // Redirect user to index.php
-	    header("Location: main.html");
+	    header("Location: main.php");
 		send_whatsapp("Użytkownik $username zalogował się na stronę");
          }else{
 	echo "<div class='form'>

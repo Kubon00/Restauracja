@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include('navbar.php');
+?>
 <html lang="pl">
 
 <head>
@@ -29,31 +32,6 @@
 </head>
 
 <body>
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="main.html" class="navbar-brand">Restauracja <span>Oregano</span></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="main.html" class="nav-item nav-link ">Strona Główna</a>
-                    <a href="about.html" class="nav-item nav-link">O nas</a>
-                    <a href="team.html" class="nav-item nav-link">Kucharze</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <a href="bookings.php" class="nav-item nav-link active">Rezerwacja</a>
-                    <a href="contact.php" class="nav-item nav-link">Kontakt</a>
-                    <a href="questions.php" class="nav-item nav-link">Pytania</a>
-                    <a href="reservations.php" class="nav-item nav-link">Rezerwacje</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Nav Bar End -->
-
-
     <!-- Page Header Start -->
     <div class="page-header mb-0">
         <div class="container">
@@ -62,7 +40,7 @@
                     <h2>Rezerwacja</h2>
                 </div>
                 <div class="col-12">
-                    <a href="./index.html">Strona Główna</a>
+                    <a href="./main.php">Strona Główna</a>
                     <a href="./booking.html">Rezerwacja</a>
                 </div>
             </div>
@@ -181,197 +159,6 @@
     <div class="text-center">
         <img src="./img/restauracja_stoliki.png" alt="Image">
     </div>
-
-    <!-- Menu Start -->
-    <div class="menu">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>Menu</p>
-                <h2>Nasze przepyszne menu</h2>
-            </div>
-            <div class="menu-tab">
-                <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#pizza">Pizza</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#salad">Sałatki</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#napoje">Napoje</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="pizza" class="container tab-pane active">
-                        <div class="row">
-                            <div class="col-lg-7 col-md-12">
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/margharita.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span> Pizza Margharita </span> <strong>24,90 / 36,20 zł</strong></h3>
-                                        <p>sos , ser , oregano </p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/caciatore.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span> Pizza Capriciosa</span><strong>29,30 / 39,00 zł</strong></h3>
-                                        <p>sos , ser , salami , oregano</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/wegetariana.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Pizza Wgetariana</span> <strong>32,50 / 42,60 zł</strong></h3>
-                                        <p>sos , ser, pieczarki , papryka , kukurydza , cebula , oregano, brokuły</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/bawarska.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Pizza Bawarska</span> <strong>35,30 / 48,20 zł</strong></h3>
-                                        <p>sos musztardowo - śmietanowy , ser, bekon , cebulka czerwona, kiełbasa ,
-                                            ogórek kiszony, oregano</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/włoska-uczta.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Pizza Włoska Uczta</span> <strong>35,30 / 48,20 zł</strong></h3>
-                                        <p>Pizza jest robiona TYLKO na cienkim włoskiem cieście! sos pomidorowy , ser,
-                                            czosnek świeży , pomidorki koktajlowe , szynka parmeńska , rukola , ser
-                                            parmeński , oliwa z oliwek</p>
-                                    </div>
-                                </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
-
-                            </div>
-                            <div class="col-lg-5 d-none d-lg-block">
-                                <img src="img/pizza-menu.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="salad" class="container tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-7 col-md-12">
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/morska.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Sałatka Morska</span> <strong>22,40 zł</strong></h3>
-                                        <p>kapusta pekińska, tuńczyk, pomidor, kapary, oliwki, ser żółty, sos vinegrette
-                                        <p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/caprese.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Sałatka Caprese</span> <strong>22,40 zł</strong></h3>
-                                        <p>kapusta pekińska, kukurydza, ananas, ogórek zielony, kurczak, sos vinegrette
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/mexicana.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Sałatka Mexicana</span> <strong>22,40 zł</strong></h3>
-                                        <p>kapusta pekińska, fasola czerwona, por, korniszon, kukurydza, papryka,
-                                            kurczak, pepperoni</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/firmowa.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Sałatka Firmowa</span> <strong>22,40 zł</strong></h3>
-                                        <p>kapusta pekińska, jajko, brokuły, ser sałatkowy, kurczak, pomidor, sos
-                                            firmowy</p>
-                                    </div>
-                                </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
-                            </div>
-                            <div class="col-lg-5 d-none d-lg-block">
-                                <img src="img/menu-salad-img.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="napoje" class="container tab-pane fade">
-                        <div class="row">
-                            <div class="col-lg-7 col-md-12">
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/woda.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Woda</span> <strong>5zł/0.3</strong></h3>
-                                        <p>Do wyboru cisowianka gazowana lub niegazowana</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/Cola.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>CocaCola</span> <strong>8zł/03</strong></h3>
-                                        <p>Do wyboru CocaCola zero lub zwykła </p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/sok.png" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Sok</span> <strong>8zł/0.3</strong></h3>
-                                        <p>Do wyboru sok pomarańczowy, porzeczkowy lub jabłkowy</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/wino.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Wino</span> <strong>15zł/kieliszek</strong></h3>
-                                        <p>Do wyboru wino białe lub czerwone</p>
-                                    </div>
-                                </div>
-                                <div class="menu-item">
-                                    <div class="menu-img">
-                                        <img src="img/kawa.jpg" alt="Image">
-                                    </div>
-                                    <div class="menu-text">
-                                        <h3><span>Kawa</span> <strong>10zł</strong></h3>
-                                        <p>Do wyboru espresso, rstretto, cappuccino, macchiato, mocha </p>
-                                    </div>
-                                </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
-                            </div>
-                            <div class="col-lg-5 d-none d-lg-block">
-                                <img src="img/drinks.jpg" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Menu End -->
-
 
     <!-- Footer Start -->
     <div class="footer">
