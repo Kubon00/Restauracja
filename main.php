@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include('navbar.php');
+?>
 <html lang="pl">
 
 <head>
@@ -25,38 +28,13 @@
 </head>
 
 <body>
-    <!-- Nawigacja Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="main.html" class="navbar-brand">Restauracja <span>Oregano</span></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="main.html" class="nav-item nav-link active">Strona Główna</a>
-                    <a href="about.html" class="nav-item nav-link">O nas</a>
-                    <a href="team.html" class="nav-item nav-link">Kucharze</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <a href="bookings.php" class="nav-item nav-link">Rezerwacja</a>
-                    <a href="contact.php" class="nav-item nav-link">Kontakt</a>
-                    <a href="questions.php" class="nav-item nav-link">Pytania</a>
-                    <a href="reservations.php" class="nav-item nav-link">Rezerwacje</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Nawigacja End -->
-
-
     <!-- Slider Start -->
     <div class="carousel">
         <div class="container-fluid">
             <div class="owl-carousel">
                 <div class="carousel-item">
                     <div class="carousel-img">
-                        <img src="img/Ingredients.jpg" alt="Image">
+                        <img src="./img/Ingredients.jpg" alt="Image">
                     </div>
                     <div class="carousel-text">
                         <h1>Najlepszej <span>Jakości</span> Składniki</h1>
@@ -65,7 +43,7 @@
                             gwarantem niepowtarzalnego i dobrego smaku naszych potraw.
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn custom-btn" href="./menu.html">Zobacz Menu</a>
+                            <a class="btn custom-btn" href="./menu.php">Zobacz Menu</a>
                             <a class="btn custom-btn" href="./bookings.php">Zarezerwuj Stolik</a>
                         </div>
                     </div>
@@ -77,11 +55,11 @@
                     <div class="carousel-text">
                         <h1>Najlepsi <span>Pracownicy</span> Na Świecie</h1>
                         <p>
-                            W naszej pizzeri pracują najlepsi kucharze oraz najlepsze kelnerki. Każdy nasz pracownik ma
+                            W naszej pizzeri pracują najlepsi kucharze oraz najelpsze kelnerki. Każdy nasz pracownik ma
                             wieloletni staż oraz doświadczenie.
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn custom-btn" href="./menu.html">Zobacz Menu</a>
+                            <a class="btn custom-btn" href="./menu.php">Zobacz Menu</a>
                             <a class="btn custom-btn" href="./bookings.php">Zarezerwuj Stolik</a>
                         </div>
                     </div>
@@ -96,7 +74,7 @@
                             Wszystkie stoliki są nieustannie dezynfekowane.
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn custom-btn" href="./menu.html">Zobacz Menu</a>
+                            <a class="btn custom-btn" href="./menu.php">Zobacz Menu</a>
                             <a class="btn custom-btn" href="./bookings.php">Zarezerwuj Stolik</a>
                         </div>
                     </div>
@@ -111,7 +89,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-img">
-                        <img src="img/rodzina.jpg" alt="Image">
+                        <img src="img/Chef.jpg" alt="Image">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -129,7 +107,7 @@
                                 iście włoska.
 
                             </p>
-                            Nasza restauracja jest rodzinnym przedsięwzięciem, w które angażuje się każdy z jej członków
+                            Nasza pizzeria jest rodzinnym przedsięwzięciem, w które angażuje się każdy z jej członków
                             Pragniemy, abyś i Ty wspólnie z własną rodziną i przyjaciółmi poczuli ten niesamowity,
                             ciepły klimat.
                             <p>
@@ -234,7 +212,7 @@
                         <p>
                             Spróbuj naszej pizzy.
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -244,7 +222,7 @@
                         <p>
                             Spróbuj naszych sałatek.
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -254,7 +232,7 @@
                         <p>
                             Spróbuj naszych napojów
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
             </div>
@@ -334,7 +312,7 @@
                                             parmeński , oliwa z oliwek</p>
                                     </div>
                                 </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
+                                <a class="btn custom-btn" href="/menu.php">Zoabcz nasze całe menu</a>
 
                             </div>
                             <div class="col-lg-5 d-none d-lg-block">
@@ -352,7 +330,7 @@
                                     <div class="menu-text">
                                         <h3><span>Sałatka Morska</span> <strong>22,40 zł</strong></h3>
                                         <p>kapusta pekińska, tuńczyk, pomidor, kapary, oliwki, ser żółty, sos vinegrette
-                                        <p>
+                                            <p>
                                     </div>
                                 </div>
                                 <div class="menu-item">
@@ -385,7 +363,7 @@
                                             firmowy</p>
                                     </div>
                                 </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
+                                <a class="btn custom-btn" href="/menu.php">Zoabcz nasze całe menu</a>
                             </div>
                             <div class="col-lg-5 d-none d-lg-block">
                                 <img src="img/menu-salad-img.jpg" alt="Image">
@@ -440,7 +418,7 @@
                                         <p>Do wyboru espresso, rstretto, cappuccino, macchiato, mocha </p>
                                     </div>
                                 </div>
-                                <a class="btn custom-btn" href="/menu.html">Zoabcz nasze całe menu</a>
+                                <a class="btn custom-btn" href="/menu.php">Zoabcz nasze całe menu</a>
                             </div>
                             <div class="col-lg-5 d-none d-lg-block">
                                 <img src="img/drinks.jpg" alt="Image">
@@ -474,7 +452,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Jakub Momot</h2>
+                            <h2>Daniel Kochanek</h2>
                             <p>CEO, Co Founder</p>
                         </div>
                     </div>
@@ -508,7 +486,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>John Doe</h2>
+                            <h2>Jhon Doe</h2>
                             <p>Szef Kuchni</p>
                         </div>
                     </div>
@@ -589,9 +567,9 @@
                         <div class="col-md-6 ">
                             <div class="footer-contact">
                                 <h2>Kontakt</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>lorem 39, 46-022 lorem</p>
-                                <p><i class="fa fa-phone-alt"></i>123 123 123</p>
-                                <p><i class="fa fa-envelope"></i>loremlorem@gmail.com</p>
+                                <p><i class="fa fa-map-marker-alt"></i>Opolska 39, 46-022 Luboszyce</p>
+                                <p><i class="fa fa-phone-alt"></i>735 911 901</p>
+                                <p><i class="fa fa-envelope"></i>kodaniel100@gmail.com</p>
                                 <div class="footer-social">
                                     <a href="https://www.facebook.com/daniel.kochaneek"><i
                                             class="fab fa-facebook-f"></i></a>

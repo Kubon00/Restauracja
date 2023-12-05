@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include('navbar.php');
+?>
 <html lang="pl">
 
 <head>
@@ -28,31 +31,6 @@
 </head>
 
 <body>
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-expand-lg bg-light navbar-light">
-        <div class="container-fluid">
-            <a href="main.html" class="navbar-brand">Restauracja <span>Oregano</span></a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto">
-                    <a href="main.html" class="nav-item nav-link active">Strona Główna</a>
-                    <a href="about.html" class="nav-item nav-link">O nas</a>
-                    <a href="team.html" class="nav-item nav-link">Kucharze</a>
-                    <a href="menu.html" class="nav-item nav-link">Menu</a>
-                    <a href="bookings.php" class="nav-item nav-link">Rezerwacja</a>
-                    <a href="contact.php" class="nav-item nav-link">Kontakt</a>
-                    <a href="questions.php" class="nav-item nav-link">Pytania</a>
-                    <a href="reservations.php" class="nav-item nav-link">Rezerwacje</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Nav Bar End -->
-
-
     <!-- Page Header Start -->
     <div class="page-header mb-0">
         <div class="container">
@@ -61,8 +39,8 @@
                     <h2>O nas</h2>
                 </div>
                 <div class="col-12">
-                    <a href="./index.html">Strona Główna</a>
-                    <a href="./about.html">O nas</a>
+                    <a href="./main.php">Strona Główna</a>
+                    <a href="./about.php">O nas</a>
                 </div>
             </div>
         </div>
@@ -81,7 +59,7 @@
                         <p>
                             Spróbuj naszej pizzy.
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -91,7 +69,7 @@
                         <p>
                             Spróbuj naszych sałatek.
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -101,7 +79,7 @@
                         <p>
                             Spróbuj naszych napojów
                         </p>
-                        <a href="./menu.html">Zobacz Menu</a>
+                        <a href="./menu.php">Zobacz Menu</a>
                     </div>
                 </div>
             </div>
