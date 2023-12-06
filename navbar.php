@@ -53,6 +53,7 @@ if(!isset($_SESSION)) {
                         // Display these links only for logged-in users
                         echo '<a href="questions.php" class="nav-item nav-link">Pytania</a>';
                         echo '<a href="reservations.php" class="nav-item nav-link">Rezerwacje</a>';
+                        echo '<a href="menuMaintance.php" class="nav-item nav-link">Edycja Menu</a>';
                         echo '<a href="logout.php" class="nav-item nav-link">Wyloguj</a>';
                     }
                     if (!isset($_SESSION['username'])) {
