@@ -173,10 +173,14 @@
                                 <p><i class="fa fa-phone-alt"></i>123 123 123</p>
                                 <p><i class="fa fa-envelope"></i>loremlorem@gmail.com</p>
                                 <div class="footer-social">
-                                    <a href="https://www.facebook.com/daniel.kochaneek"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCq_0gLwc-DG7PQ0HYh_R2GQ"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/daniel.kochaneek/"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/daniel-kochanek-4423a321a/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i
+                                            class="fab fa-youtube"></i></a>
+                                    <a href=""><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href=""><i
+                                            class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
                         </div>

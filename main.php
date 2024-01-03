@@ -452,7 +452,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Daniel Kochanek</h2>
+                            <h2>Jakub Momot</h2>
                             <p>CEO, Co Founder</p>
                         </div>
                     </div>
@@ -486,7 +486,7 @@
                             </div>
                         </div>
                         <div class="team-text">
-                            <h2>Jhon Doe</h2>
+                            <h2>John Doe</h2>
                             <p>Szef Kuchni</p>
                         </div>
                     </div>
@@ -567,17 +567,17 @@
                         <div class="col-md-6 ">
                             <div class="footer-contact">
                                 <h2>Kontakt</h2>
-                                <p><i class="fa fa-map-marker-alt"></i>Opolska 39, 46-022 Luboszyce</p>
-                                <p><i class="fa fa-phone-alt"></i>735 911 901</p>
-                                <p><i class="fa fa-envelope"></i>kodaniel100@gmail.com</p>
+                                <p><i class="fa fa-map-marker-alt"></i>lorem 39, 46-022 lorem</p>
+                                <p><i class="fa fa-phone-alt"></i>123 123 123</p>
+                                <p><i class="fa fa-envelope"></i>loremlorem@gmail.com</p>
                                 <div class="footer-social">
-                                    <a href="https://www.facebook.com/daniel.kochaneek"><i
+                                    <a href=""><i
                                             class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCq_0gLwc-DG7PQ0HYh_R2GQ"><i
+                                    <a href=""><i
                                             class="fab fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/daniel.kochaneek/"><i
+                                    <a href=""><i
                                             class="fab fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/daniel-kochanek-4423a321a/"><i
+                                    <a href=""><i
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
                             </div>
