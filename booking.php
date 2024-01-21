@@ -3,6 +3,7 @@
 
 require('connect.php');
 require('send.php');
+require('send_email.php');
 
 $rezerwacje = new mysqli($host, $db_user, $db_password, $db_name);
 
@@ -44,6 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Godzina: $godzina,
             Goście: $goscie,
             Stolik: $Nr_stolika");
+
+            sendEmail($imie, $email, $telefon, $newdate, $godzina, $goscie, $Nr_stolika);
 
             header("Location: thx.html");
         }
